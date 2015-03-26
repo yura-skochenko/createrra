@@ -1,0 +1,12 @@
+body{
+    background-image: -moz-linear-gradient(bottom, #E5A813 0%, #FFF 100%);
+    background-image: -o-linear-gradient(bottom, #E5A813 0%, #FFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #E5A813 0%, #FFF 100%);
+    background-image: linear-gradient(to top, #E5A813 0%, #FFF 100%);
+}
+/* global */
+.pull-left{float: left;}
+.pull-right{float: right;}
+.clear{clear:  both;}
+
+/* main page */
