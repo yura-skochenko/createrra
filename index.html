@@ -9,47 +9,60 @@
         <![endif]-->
         <!-- style -->
         <link rel="stylesheet" href="//cdn.jsdelivr.net/normalize/3.0.2/normalize.css">
-        <link href="./css/style.css" rel="stylesheet" media="all">
+        <link href="css/style.css" rel="stylesheet" media="all">
+        <link href="css/jquery.bxslider.css" rel="stylesheet" media="all">
+        <link href="css/jquery.selectbox.css" media="all" rel="stylesheet" />
     </head>
-    <body class="">
-        <div class="topbar">
-
+    <body>
+        <div class="topbar container">
+            <ul class="pull-right">
+                <li><label for="lang-ua">UA</label></li>
+                <li>
+                    <div class="toggle-bg">
+                        <input type="radio" name="toggle" value="ua" id="lang-ua">
+                        <input type="radio" name="toggle" value="ru" id="lang-ru">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                <li><label for="lang-ru">RU</label></li>
+            </ul>
         </div>
         <header>
             <a class="logo pull-left" href="">
-                <img src="./img/logo.png" alt="logo"/>
+                <img src="img/logo.png" alt="logo"/>
             </a>
-
             <div class="pull-right">
-                <form action="">
-                    <input type="search" name="search">
+                <form class="pull-left search">
+                    <input name="search" type="search" placeholder="Поиск" class="text-search">
+                    <input type="submit" value="Найти" class="btn btn-small">
                 </form>
-                <div class="log-in">
-                    <a href=""></a>
-                    <a href=""></a>
+                <div class="cart pull-right"><a href="">Корзина</a></div>
+                <div class="log-in pull-right">
+                    <a href="">Войдите</a> или
+                    <a href="">зарегистрируйтесь</a>
                 </div>
-                <div class="cart"><a href="">Корзина</a></div>
-                <nav>
+                <nav class="clear">
                     <ul>
                         <li><a href="">Главная</a></li>
-                        <li><a href="">Новости</a></li>
-                        <li>
-                            <a href="">Каталог</a>
-                            <div class="sub-menu">
-                                <ul>
-                                    <li><a href="">Шорты</a></li>
-                                    <li><a href="">Юбки</a></li>
-                                    <li><a href="">Джинсовые куртки</a></li>
-                                    <li><a href="">Платья</a></li>
-                                    <li><a href="">Сапоги</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="">Бриджи</a></li>
-                                    <li><a href="">Шапки</a></li>
-                                    <li><a href="">Шарфы</a></li>
-                                    <li><a href="">Свитера</a></li>
-                                    <li><a href="">Гольфы</a></li>
-                                </ul>
+                        <li><a href="">Новостії</a></li>
+                        <li><a href="">Каталог</a>
+                            <div class="drop-down">
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="">Шорты</a></li>
+                                        <li><a href="">Юбки</a></li>
+                                        <li><a href="">Джинсовые куртки</a></li>
+                                        <li><a href="">Платья</a></li>
+                                        <li><a href="">Сапоги</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">Бриджи</a></li>
+                                        <li><a href="">Шапки</a></li>
+                                        <li><a href="">Шарфы</a></li>
+                                        <li><a href="">Свитера</a></li>
+                                        <li><a href="">Гольфы</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
                         <li><a href="">Оптовым покупателям</a></li>
@@ -59,34 +72,277 @@
                 </nav>
             </div>
         </header>
-        <section class="promo-zone">
-            <ul>
+        <section class="promo-zone clear">
+            <ul class="container">
                 <li>
                     <a href="">
-                        <span>Каталог</span>
+                        <img src="img/img-prom-catalog.png">
+                        <div>Каталог</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <span>Акции и новинки</span>
+                        <img src="img/img-prom-sale.png">
+                        <div>Акции и<br> новинки</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <span>Доставка и оплата</span>
+                        <img src="img/img-prom-delivery.png">
+                        <div>Доставка<br> и оплата</div>
                     </a>
                 </li>
             </ul>
         </section>
-        <div id="content">
-            <section class="tabs">
+        <div id="content" class="container">
+            <section id="tabs">
+                <div class="section">
+                    <ul class="tabs">
+                        <li class="current">
+                            <div class="tabs-title">
+                                <div>Акции</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tabs-title">
+                                <div>Рекомендуемый товар</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tabs-title">
+                                <div>Новинки</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="box visible">
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl2.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl3.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl4.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl4.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl2.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl3.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl4.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl3.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl2.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl3.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <img src="img/demo/tabs-girl4.png">
+                            <div class="box-product-s-circle"><i></i></div>
+                            <div class="box-product-b-circle">
+                                <ul>
+                                    <li class="name">
+                                        <a href="">Товар в две строки</a>
+                                    </li>
+                                    <li>
+                                        <storng>800</storng> грн
+                                    </li>
+                                    <li class="cart">
+                                        <a href="" title="Добавить в корзину"><i></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="slider">
-
+            <section class="slider clear">
+                <div class="carousel">
+                    <div class="slide"><img src="img/demo/carousel-girl1.png"></div>
+                    <div class="slide"><img src="img/demo/carousel-girl2.png"></div>
+                    <div class="slide"><img src="img/demo/carousel-girl3.png"></div>
+                    <div class="slide"><img src="img/demo/carousel-girl4.png"></div>
+                    <div class="slide"><img src="img/demo/carousel-girl2.png"></div>
+                    <div class="slide"><img src="img/demo/carousel-girl3.png"></div>
+                    <div class="slide"><img src="img/demo/carousel-girl4.png"></div>
+                    <div class="slide"><img src="img/demo/carousel-girl1.png"></div>
+                    <div class="slide"><img src="img/demo/carousel-girl3.png"></div>
+                    <div class="slide"><img src="img/demo/carousel-girl4.png"></div>
+                </div>
             </section>
             <section class="seo-text">
-                <h2>Доставка и оплата</h2>
+                <h2><span></span>Доставка и оплата<span></span></h2>
                 <div>
                     <p>
                         Наличный расчет или наложенный платеж
@@ -108,57 +364,60 @@
             </section>
         </div>
         <footer>
-            <div class="column">
-                <h2></h2>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2></h2>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2></h2>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2></h2>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-            <div id="copyright">
-                <div class="pull-right">© 2015 <a href="">CREATERRA</a> Разработка студии «Фабрика идей UMH»</div>
+            <div class="container">
+                <div class="column">
+                    <h2>Навигация</h2>
+                    <ul>
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Каталог</a></li>
+                        <li><a href="">Оптовым покупателям</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                    <a href="" class="site-map">Карта сайта</a>
+                </div>
+                <div class="column">
+                    <h2>Свяжитесь с нами</h2>
+                    <ul>
+                        <li>Тел.:(067)777-77-77</li>
+                        <li class="telephone">(067)777-77-77</li>
+                        <li class="telephone">(067)777-77-77</li>
+                        <li>Email:<a href="mailto:info@createrra.com">info@createrra.com</a></li>
+                        <li class="timetable">Работаем с 9 до 18</li>
+                        <li class="timetable">рабочие дни: пн.-сб.</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2>Мы расположены</h2>
+                    <ul>
+                        <li>6500</li>
+                        <li>Украина</li>
+                        <li>г.Одесса</li>
+                        <li>ул.Греческая</li>
+                        <li>офис 777</li>
+                    </ul>
+                </div>
+                <div class="column social-net">
+                    <h2>Мы в соц.сетях</h2>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div id="copyright">
+                    <div class="pull-right">© 2015 <a href="">CREATERRA</a> Разработка студии «Фабрика идей UMH»</div>
+                </div>
             </div>
         </footer>
 
         <!-- scripts -->
         <script src="//cdn.jsdelivr.net/jquery/1.11.2/jquery.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.selectbox-0.2.min.js"></script>
 
     </body>
 </html>
