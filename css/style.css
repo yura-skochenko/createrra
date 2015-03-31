@@ -1020,6 +1020,13 @@ ul.tabs {
 .product-grid>div{
     position: relative;
     width: 210px;
+    float: left;
+    margin: 0 44px 26px 0;
+}
+.product-grid>div:nth-child(4n+4){margin-right: 0;}
+.product-grid>div .show-img-product{
+    z-index: 5;
+    /*position: relative;*/
 }
 .product-grid>div .prices{
     position: absolute;
@@ -1058,12 +1065,64 @@ ul.tabs {
     font-size: 12px;
     font-weight: 300;
     line-height: 18px;
+    position: absolute;
+    top: 0;
+    right: -34px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.9s, visibility 0.9s, linear 0.2s;
+}
+.product-grid>div.active .show-card-product{
+    right: -260px;
+    opacity: 100;
+    visibility: visible;
+}
+.product-grid>div .show-card-product:after {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 140px;
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-right: 12px solid #717374;
+    border-bottom: 14px solid transparent;
+}
+.product-grid>div:nth-child(4n+4):hover .show-card-product{
+    right: 226px;
+}
+.product-grid>div:nth-child(4n+4) .show-card-product:after{
+    right: -12px;
+    left: auto;
+    border-right: 0px solid #717374;
+    border-left: 12px solid #717374;
+}
+.product-grid>div .product-s-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -23px 0 0 -23px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.72);
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+.product-grid>div .product-s-circle i {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 11px auto;
+    background: url(../img/img-sprite.png) no-repeat 0px -23px;
 }
 .product-grid>div .close-product{
     position: absolute;
     top: 5px;
     right: 10px;
     color: #E5A812;
+    cursor: pointer;
 }
 .product-grid>div .show-card-product ul{
     margin: 0;
@@ -1110,6 +1169,7 @@ ul.tabs {
     color: #ffffff;
 }
 .product-grid>div .show-card-product .size strong{line-height: 28px;float: left;}
+.product-grid>div .show-card-product .size ul{margin-left: 8px;}
 .product-grid>div .show-card-product .size .disabled+label{
     opacity: 0.4;
     filter: alpha(opacity=40);
@@ -1156,7 +1216,7 @@ ul.tabs {
 
 /* number input  */
 .number input{
-    width: 39px;
+    width: 24px;
     height: 29px;
     display: inline-block;
     font-size: 14px;
@@ -1170,7 +1230,7 @@ ul.tabs {
     border-radius: 3px;
 }
 .number div{
-    width: 18px;
+    width: 15px;
     height: 34px;
     display: inline-block;
     position: relative;
@@ -1180,14 +1240,14 @@ ul.tabs {
     position: absolute;
     top: 1px;
     left: 0;
-    width: 18px;
+    width: 15px;
     height: 15px;
     cursor: pointer;
-    background: url(../img/img-sprite.png) no-repeat -96px -41px;
+    background: url(../img/img-sprite.png) no-repeat -98px -41px;
 }
 .number div span.minus{
     top: 17px;
-    background-position: -96px -55px;
+    background-position: -98px -55px;
 }
 /* SEO text */
 .seo-text{padding-top: 65px;}

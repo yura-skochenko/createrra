@@ -38,4 +38,16 @@ $(document).ready(function(){
                     pager: false,
                     slideMargin: 0
                 });
+                /* product show card */
+                $('.product-s-circle').on('click', function(){
+                    $(this).parent('div').toggleClass('active');
+                });
+                $('.product-grid>div.active').mouseleave(function(){
+                    alert('hi');
+                    $(this).removeClass('active');
+
+                });
+                $('.close-product').on('click', function(){
+                    $(this).parents('div').removeClass('active');
+                });
             });
