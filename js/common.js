@@ -50,4 +50,10 @@ $(document).ready(function(){
                 $('.close-product').on('click', function(){
                     $(this).parents('div').removeClass('active');
                 });
+
+                $('#del-np:radio:checked').on('click', function(){
+                    $('#delivery-np').removeClass('active');
+                    $('#delivery-np').addClass('active');
+                    alert('hi');
+                });
             });

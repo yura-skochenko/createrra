@@ -75,97 +75,99 @@
         <div id="content" class="container">
             <section id="cart">
                 <h2>Корзина</h2>
-                <table class="cart-orders">
-                    <thead>
-                        <tr>
-                            <th>Фото</th>
-                            <th class="name">Наименование товара</th>
-                            <th>Кол-во (ед.)</th>
-                            <th>Цвет</th>
-                            <th>Размер</th>
-                            <th>Цена за ед.</th>
-                            <th>Сумма</th>
-                            <th>Удалить</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href=""><img src="img/demo/orders-user-girl1.png" alt=""></a></td>
-                            <td class="name"><a href="">Короткое платье</a></td>
-                            <td>
-                                <div class="number">
-                                    <input type="text" value="1"/>
-                                    <div>
-                                        <span class="minus"></span>
-                                        <span class="plus"></span>
+                <form>
+                    <table class="cart-orders">
+                        <thead>
+                            <tr>
+                                <th>Фото</th>
+                                <th class="name">Наименование товара</th>
+                                <th>Кол-во (ед.)</th>
+                                <th>Цвет</th>
+                                <th>Размер</th>
+                                <th>Цена за ед.</th>
+                                <th>Сумма</th>
+                                <th>Удалить</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href=""><img src="img/demo/orders-user-girl1.png" alt=""></a></td>
+                                <td class="name"><a href="">Короткое платье</a></td>
+                                <td>
+                                    <div class="number">
+                                        <input type="text" value="1"/>
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <select name="" class="select_product">
-                                    <option value="">Коричневый</option>
-                                    <option value="">Белый</option>
-                                    <option value="">Карасный</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="" class="select_product" id="size_product">
-                                    <option value="">XXS</option>
-                                    <option value="">XS</option>
-                                    <option value="">S</option>
-                                    <option value="">M</option>
-                                    <option value="">L</option>
-                                </select>
-                            </td>
-                            <td class="price">100 <span class="currency">грн</span></td>
-                            <td class="price">200 <span class="currency">грн</span></td>
-                            <td><img src="img/delete.png"  alt="Удалить товар"></td>
-                        </tr>
-                        <tr>
-                            <td><a href=""><img src="img/demo/orders-user-girl2.png" alt=""></a></td>
-                            <td class="name"><a href="">Платье</a></td>
-                            <td>
-                                <div class="number">
-                                    <input type="text" value="1"/>
-                                    <div>
-                                        <span class="minus"></span>
-                                        <span class="plus"></span>
+                                </td>
+                                <td>
+                                    <select name="" class="select_product">
+                                        <option value="">Коричневый</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Карасный</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="" class="select_product" id="size_product">
+                                        <option value="">XXS</option>
+                                        <option value="">XS</option>
+                                        <option value="">S</option>
+                                        <option value="">M</option>
+                                        <option value="">L</option>
+                                    </select>
+                                </td>
+                                <td class="price">100 <span class="currency">грн</span></td>
+                                <td class="price">200 <span class="currency">грн</span></td>
+                                <td><img src="img/delete.png"  alt="Удалить товар"></td>
+                            </tr>
+                            <tr>
+                                <td><a href=""><img src="img/demo/orders-user-girl2.png" alt=""></a></td>
+                                <td class="name"><a href="">Платье</a></td>
+                                <td>
+                                    <div class="number">
+                                        <input type="text" value="1"/>
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <select name="" class="select_product">
-                                    <option value="">Коричневый</option>
-                                    <option value="">Белый</option>
-                                    <option value="">Карасный</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="" class="select_product" id="size_product">
-                                    <option value="">XXS</option>
-                                    <option value="">XS</option>
-                                    <option value="">S</option>
-                                    <option value="">M</option>
-                                    <option value="">L</option>
-                                </select>
-                            </td>
-                            <td class="price">700 <span class="currency">грн</span></td>
-                            <td class="price">700 <span class="currency">грн</span></td>
-                            <td><img src="img/delete.png"  alt="Удалить товар"></td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="8" class="price">сумма заказа: 900 <span class="currency">грн</span></td>
-                        </tr>
-                        <tr>
-                            <td colspan="8">
-                                <a href="" class="btn-text">Продолжить покупки</a>
-                                <a class="btn">Оформить заказ</a>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
+                                </td>
+                                <td>
+                                    <select name="" class="select_product">
+                                        <option value="">Коричневый</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Карасный</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="" class="select_product" id="size_product">
+                                        <option value="">XXS</option>
+                                        <option value="">XS</option>
+                                        <option value="">S</option>
+                                        <option value="">M</option>
+                                        <option value="">L</option>
+                                    </select>
+                                </td>
+                                <td class="price">700 <span class="currency">грн</span></td>
+                                <td class="price">700 <span class="currency">грн</span></td>
+                                <td><img src="img/delete.png"  alt="Удалить товар"></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="8" class="price">сумма заказа: 900 <span class="currency">грн</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="8">
+                                    <a href="" class="btn-text">Продолжить покупки</a>
+                                    <a class="btn">Оформить заказ</a>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
             </section>
             <section class="seo-text">
                 <h2><span></span>Доставка и оплата<span></span></h2>
