@@ -74,102 +74,38 @@
             </div>
         </header>
         <div id="content" class="container">
-            <section id="cart">
-                <h2>Корзина</h2>
+
+            <section id="registration">
+                <h2 class="title-left">Регистрация нового пользователя</h2>
                 <form>
-                    <table class="cart-orders">
-                        <thead>
-                            <tr>
-                                <th>Фото</th>
-                                <th class="name">Наименование товара</th>
-                                <th>Кол-во (ед.)</th>
-                                <th>Цвет</th>
-                                <th>Размер</th>
-                                <th>Цена за ед.</th>
-                                <th>Сумма</th>
-                                <th>Удалить</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><a href=""><img src="img/demo/orders-user-girl1.png" alt=""></a></td>
-                                <td class="name"><a href="">Короткое платье</a></td>
-                                <td>
-                                    <div class="number">
-                                        <input type="text" value="1"/>
-                                        <div>
-                                            <span class="minus"></span>
-                                            <span class="plus"></span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <select name="" class="select_product">
-                                        <option value="">Коричневый</option>
-                                        <option value="">Белый</option>
-                                        <option value="">Карасный</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" class="select_product" id="size_product">
-                                        <option value="">XXS</option>
-                                        <option value="">XS</option>
-                                        <option value="">S</option>
-                                        <option value="">M</option>
-                                        <option value="">L</option>
-                                    </select>
-                                </td>
-                                <td class="price">100 <span class="currency">грн</span></td>
-                                <td class="price">200 <span class="currency">грн</span></td>
-                                <td><img src="img/delete.png"  alt="Удалить товар"></td>
-                            </tr>
-                            <tr>
-                                <td><a href=""><img src="img/demo/orders-user-girl2.png" alt=""></a></td>
-                                <td class="name"><a href="">Платье</a></td>
-                                <td>
-                                    <div class="number">
-                                        <input type="text" value="1"/>
-                                        <div>
-                                            <span class="minus"></span>
-                                            <span class="plus"></span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <select name="" class="select_product">
-                                        <option value="">Коричневый</option>
-                                        <option value="">Белый</option>
-                                        <option value="">Карасный</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="" class="select_product" id="size_product">
-                                        <option value="">XXS</option>
-                                        <option value="">XS</option>
-                                        <option value="">S</option>
-                                        <option value="">M</option>
-                                        <option value="">L</option>
-                                    </select>
-                                </td>
-                                <td class="price">700 <span class="currency">грн</span></td>
-                                <td class="price">700 <span class="currency">грн</span></td>
-                                <td><img src="img/delete.png"  alt="Удалить товар"></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="8" class="price">сумма заказа: 900 <span class="currency">грн</span></td>
-                            </tr>
-                            <tr>
-                                <td colspan="8">
-                                    <a href="" class="btn-text">Продолжить покупки</a>
-                                    <a class="btn">Оформить заказ</a>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
+                    <ul class="no-indents">
+                        <li><input type="text" placeholder="Имя и Фамилия" class="input-text-style"></li>
+                        <li><input type="text" placeholder="E-mail" class="input-text-style"></li>
+                        <li><input type="tel" placeholder="Номер телефона" class="input-text-style"></li>
+                        <li><input type="password" placeholder="Пароль" class="input-text-style"></li>
+                        <li>
+                            <select name="region" id="region" class="select-light">
+                                <option>Выберите область доставки</option>
+                                <option value="">Одесская область</option>
+                                <option value="">Днепропетровская область</option>
+                                <option value="">Львовская оласть</option>
+                                <option value="">Ивано-франковская оласть</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="city" id="city" class="select-light">
+                                <option value="">Выберите город доставки</option>
+                                <option value="">Одесса</option>
+                                <option value="">Днепропетровск</option>
+                                <option value="">Львов</option>
+                            </select>
+                        </li>
+                        <li><input type="text" placeholder="Адрес доставки" class="input-text-style"></li>
+                        <li><input type="button" class="btn" value="Зарегистрироваться"/></li>
+                    </ul>
                 </form>
             </section>
+
             <section class="seo-text">
                 <h2><span></span>Доставка и оплата<span></span></h2>
                 <div>
@@ -191,6 +127,7 @@
                     </p>
                     </div>
             </section>
+
         </div>
         <footer>
             <div class="container">
@@ -244,7 +181,7 @@
 
         <!-- scripts -->
         <script src="//cdn.jsdelivr.net/jquery/1.11.2/jquery.js"></script>
-
+        <script src="js/jquery-ui.min.js"></script>
         <script src="js/common.js"></script>
         <script src="js/jquery.bxslider.min.js"></script>
         <script src="js/jquery.selectbox-0.2.min.js"></script>

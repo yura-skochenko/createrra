@@ -74,64 +74,10 @@
             </div>
         </header>
         <div id="content" class="container">
-            <section id="product-filter">
-                <h2 class="title">Фильтры</h2>
-                <form action="">
-                    <div class="filter-size pull-left">
-                        <h3>По размеру</h3>
-                        <ul class="no-indents">
-                            <li><input type="checkbox"><label>M</label></li>
-                            <li><input type="checkbox"><label>S</label></li>
-                            <li><input type="checkbox"><label>XS</label></li>
-                            <li><input type="checkbox"><label>XXS</label></li>
-                        </ul>
-                    </div>
-                    <div class="filter-color pull-left">
-                        <h3>По цвету:</h3>
-                        <table>
-                            <tr>
-                                <td><input type="checkbox"/><label>Белый</label></td>
-                                <td><input type="checkbox"/><label>Оранжевый</label></td>
-                                <td><input type="checkbox"/><label>Зелёный</label></td>
-                                <td><input type="checkbox"/><label>Синий</label></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox"/><label>Красный</label></td>
-                                <td><input type="checkbox"/><label>Желтый</label></td>
-                                <td><input type="checkbox"/><label>Голубой</label></td>
-                                <td><input type="checkbox"/><label>Фиолетовый</label></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="filter-price pull-left">
-                        <h3>По цене:</h3>
-                        <div id="buy_price"></div>
-                        <input name="price_s" type="text"  value="30" class="price-range"> - <input name="price_f" type="text"  value="2200" class="price-range">
-                        <input class="btn btn-small" type="button" value="OK">
-                    </div>
-                    <div class="clear">
-                        <input type="reset" id="reset">
-                        <label for="reset" class="btn-text">Сбросить фильтры</label>
-                    </div>
-                </form>
-            </section>
-            <section id="product">
-                <div class="column-left pull-left">
-                    <div class="category">
-                        <ul>
-                            <li><a href="">Платья</a></li>
-                            <li><a href="">Юбки</a></li>
-                            <li><a href="">Брюки</a></li>
-                            <li><a href="">Сарафаны</a></li>
-                            <li><a href="">Пиджаки</a></li>
-                            <li><a href="">Блузки</a></li>
-                            <li><a href="">Джинсы</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <section id="product" class="search-result">
                 <div class="product-grid pull-left">
                     <h2 class="title-left">
-                        Платья
+                        Результаты поиска по запросу «Платья» (321):
                         <div class="pull-right">
                             <label>Сортировка: </label>
                             <select name="" id="product-sort" class="select-light">
@@ -142,7 +88,6 @@
                             </select>
                         </div>
                     </h2>
-
                     <div>
                         <div class="show-img-product">
                             <img src="img/demo/product-girl1.png" alt="">
