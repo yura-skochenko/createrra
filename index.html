@@ -39,7 +39,7 @@
                 </form>
                 <div class="cart pull-right"><a href="">Корзина</a></div>
                 <div class="log-in pull-right">
-                    <a href="">Войдите</a> или
+                    <a href="" data-reveal-id="modal-log-in" data-animation="fade">Войдите</a> или
                     <a href="">зарегистрируйтесь</a>
                 </div>
                 <nav class="clear">
@@ -413,6 +413,39 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Modal window -->
+        <div id="modal-thnx-order" class="reveal-modal medium">
+            <a class="close-reveal-modal">&#215;</a>
+            <h3>Спасибо за заказ</h3>
+            <p>
+                В ближайшее время с вами свяжутся
+                наши менеджеры для подтверждения
+                заказа.
+            </p>
+        </div>
+        <div id="modal-thnx-recall" class="reveal-modal medium">
+            <a class="close-reveal-modal">&#215;</a>
+            <h3>Спасибо за Ваш отзыв!</h3>
+        </div>
+        <div id="modal-thnx-registr" class="reveal-modal medium">
+            <a class="close-reveal-modal">&#215;</a>
+            <h3>Спасибо за регистрацию</h3>
+        </div>
+        <div id="modal-log-in" class="reveal-modal small">
+            <a class="close-reveal-modal">&#215;</a>
+            <h3>Введите данные  учётной записи:</h3>
+            <form>
+                <ul class="no-indents">
+                    <li><input type="text" class="input-text-style" placeholder="Электронная почта"></li>
+                    <li><input type="text" class="input-text-style" placeholder="Пароль"></li>
+                    <li><a href="" class="btn-text forgot-password">Забыли пароль?</a></li>
+                    <li><input type="submit" class="btn" value="Войти"></li>
+                    <li class="or-text">- или -</li>
+                    <li><a href="" class="btn-text">Зарегистрироваться</a></li>
+                </ul>
+            </form>
+        </div>
 
         <!-- scripts -->
         <script src="//cdn.jsdelivr.net/jquery/1.11.2/jquery.js"></script>

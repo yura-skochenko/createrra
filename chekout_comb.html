@@ -38,7 +38,7 @@
                 </form>
                 <div class="cart pull-right"><a href="">Корзина</a></div>
                 <div class="log-in pull-right">
-                    <a href="">Войдите</a> или
+                    <a href="" data-reveal-id="modal-log-in" data-animation="fade">Войдите</a> или
                     <a href="">зарегистрируйтесь</a>
                 </div>
                 <nav class="clear">
@@ -181,32 +181,47 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td><input type="text" placeholder="ФИО"></td>
-                            <td><input type="text" placeholder="Страна"></td>
-                            <td><input type="radio" name="delivery" id="courier" checked><label for="courier">Курьером</label></td>
-                            <td><input type="radio" name="payment" id="cash" checked><label for="cash">Наличный</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" placeholder="Телефон"></td>
-                            <td><input type="text" placeholder="Город"></td>
-                            <td><input type="radio" name="delivery" id="del-np"><label for="del-np">Новой Почтой</label></td>
-                            <td><input type="radio" name="payment" id="cashless"><label for="cashless">Безналичный</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="email" placeholder="Электронная почта"></td>
-                            <td><input type="text" placeholder="Адрес"></td>
-                            <td>
-                                <select name="" id="delivery-np" class="select_product">
-                                    <option value="">Отделение №1</option>
-                                    <option value="">Отделение №10</option>
-                                    <option value="">Отделение №100</option>
-                                    <option value="">Отделение №1000</option>
-                                </select>
-                            </td>
-                            <td><input type="radio" name="payment" id="electricity"><label for="electricity">VISA/MasterCard</label></td>
-                        </tr>
+                            <tr>
+                                <td><input type="text" placeholder="ФИО"></td>
+                                <td><input type="text" placeholder="Страна"></td>
+                                <td><input type="radio" name="delivery" id="courier" checked><label for="courier">Курьером</label></td>
+                                <td><input type="radio" name="payment" id="cash" checked><label for="cash">Наличный</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="Телефон"></td>
+                                <td><input type="text" placeholder="Город"></td>
+                                <td><input type="radio" name="delivery" id="del-np"><label for="del-np">Новой Почтой</label></td>
+                                <td><input type="radio" name="payment" id="cashless"><label for="cashless">Безналичный</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="email" placeholder="Электронная почта"></td>
+                                <td><input type="text" placeholder="Адрес"></td>
+                                <td>
+                                    <select name="" id="delivery-np" class="select_product">
+                                        <option value="">Отделение №1</option>
+                                        <option value="">Отделение №10</option>
+                                        <option value="">Отделение №100</option>
+                                        <option value="">Отделение №1000</option>
+                                    </select>
+                                </td>
+                                <td><input type="radio" name="payment" id="electricity"><label for="electricity">VISA/MasterCard</label></td>
+                            </tr>
                         </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea placeholder="Комментарии"></textarea>
+                                </td>
+                                <td colspan="2" class="sum">
+                                    <span>Сумма заказа: 900 <span class="currency">грн</span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <input type="submit" class="btn pull-right" value="Купить" data-reveal-id="modal-thnx-order" data-animation="fade">
+                                </td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </form>
             </section>
@@ -281,6 +296,39 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Modal window -->
+        <div id="modal-thnx-order" class="reveal-modal medium">
+            <a class="close-reveal-modal">&#215;</a>
+            <h3>Спасибо за заказ</h3>
+            <p>
+                В ближайшее время с вами свяжутся
+                наши менеджеры для подтверждения
+                заказа.
+            </p>
+        </div>
+        <div id="modal-thnx-recall" class="reveal-modal medium">
+            <a class="close-reveal-modal">&#215;</a>
+            <h3>Спасибо за Ваш отзыв!</h3>
+        </div>
+        <div id="modal-thnx-registr" class="reveal-modal medium">
+            <a class="close-reveal-modal">&#215;</a>
+            <h3>Спасибо за регистрацию</h3>
+        </div>
+        <div id="modal-log-in" class="reveal-modal small">
+            <a class="close-reveal-modal">&#215;</a>
+            <h3>Введите данные  учётной записи:</h3>
+            <form>
+                <ul class="no-indents">
+                    <li><input type="text" class="input-text-style" placeholder="Электронная почта"></li>
+                    <li><input type="text" class="input-text-style" placeholder="Пароль"></li>
+                    <li><a href="" class="btn-text forgot-password">Забыли пароль?</a></li>
+                    <li><input type="submit" class="btn" value="Войти"></li>
+                    <li class="or-text">- или -</li>
+                    <li><a href="" class="btn-text">Зарегистрироваться</a></li>
+                </ul>
+            </form>
+        </div>
 
         <!-- scripts -->
         <script src="//cdn.jsdelivr.net/jquery/1.11.2/jquery.js"></script>

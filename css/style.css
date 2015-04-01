@@ -195,7 +195,6 @@ textarea.input-text-style:-ms-input-placeholder{
     font-style: italic;
     font-family: "SkolaSansLiIt";
 }
-
 /* search */
 form.search{margin-top: 6px;}
 form.search .text-search{
@@ -241,6 +240,18 @@ form.search .text-search:-ms-input-placeholder {
     font-style: italic;
     font-family: "SkolaSansLiIt";
     line-height: 18px;
+}
+form.search .text-search:focus{
+    background-color: #b5b5b5;
+    outline: none;
+}
+form.search .text-search::-moz-focus-inner{
+    background-color: #b5b5b5;
+    outline: none;
+}
+form.search .text-search:-o-prefocus{
+    background-color: #b5b5b5;
+    outline: none;
 }
 /* top bar */
 .topbar{overflow: hidden;}
@@ -384,9 +395,7 @@ header nav ul>li>a{
     font-family: "SkolaSansMe";
     text-transform: uppercase;
 }
-header nav ul>li>a:hover{
-
-}
+header nav>ul>li>a:hover{border-bottom: 2px solid #e5a812;}
 header nav ul li .drop-down{
     opacity: 0;
     visibility: hidden;
@@ -439,9 +448,8 @@ header nav ul li .sub-menu ul{
     min-width: 140px;
     padding: 15px 5px 12px 25px;
 }
-header nav ul li .sub-menu ul li{
-    text-align: left;
-}
+header nav ul li .sub-menu ul li{text-align: left;}
+header nav ul li .sub-menu ul li a:hover{border-bottom: 2px solid #e5a812;}
 
 /* main page */
 .promo-zone{
@@ -923,7 +931,8 @@ ul.tabs {
     padding-left: 30px;
 }
 #cart-order-info tbody td input[type=text],
-#cart-order-info tbody td input[type=email]{
+#cart-order-info tbody td input[type=email],
+#cart-order-info td textarea{
     padding: 6px 8px;
     border: 1px solid #e5a812;
     -moz-border-radius: 5px;
@@ -931,37 +940,48 @@ ul.tabs {
     border-radius: 5px;
 }
 #cart-order-info tbody td input[type=text]:focus,
-#cart-order-info tbody td input[type=email]:focus{
+#cart-order-info tbody td input[type=email]:focus,
+#cart-order-info td textarea:focus{
     background-color: #b5b5b5;
     outline: none;
 }
 #cart-order-info tbody td input[type=text]::-webkit-input-placeholder,
-#cart-order-info tbody td input[type=email]::-webkit-input-placeholder {
+#cart-order-info tbody td input[type=email]::-webkit-input-placeholder,
+#cart-order-info td textarea::-webkit-input-placeholder{
     color: #000;
     font-style: italic;
     font-family: "SkolaSansLiIt";
     font-weight: 300;
 }
 #cart-order-info tbody td input[type=text]::-moz-placeholder,
-#cart-order-info tbody td input[type=email]::-moz-placeholder{
+#cart-order-info tbody td input[type=email]::-moz-placeholder,
+#cart-order-info td textarea::-moz-placeholder{
     color: #000;
     font-style: italic;
     font-family: "SkolaSansLiIt";
     font-weight: 300;
 }
 #cart-order-info tbody td input[type=text]:-moz-placeholder,
-#cart-order-info tbody td input[type=email]:-moz-placeholder{
+#cart-order-info tbody td input[type=email]:-moz-placeholder,
+#cart-order-info td textarea:-moz-placeholder{
     color: #000;
     font-style: italic;
     font-family: "SkolaSansLiIt";
     font-weight: 300;
 }
 #cart-order-info tbody td input[type=text]:-ms-input-placeholder,
-#cart-order-info tbody td input[type=email]:-ms-input-placeholder{
+#cart-order-info tbody td input[type=email]:-ms-input-placeholder,
+#cart-order-info td textarea:-ms-input-placeholder{
+    width: 188px;
     color: #000;
     font-style: italic;
     font-family: "SkolaSansLiIt";
     font-weight: 300;
+}
+#cart-order-info td textarea{
+    width: 418px;
+    max-width: 418px;
+    height: 118px;
 }
 #cart-order-info tbody td input[type=radio] {display: none;}
 #cart-order-info tbody td input+label{
@@ -970,6 +990,19 @@ ul.tabs {
     background: url(../img/img-sprite.png) no-repeat 0 -157px;
 }
 #cart-order-info tbody td input:checked+label{background-position: 0 -179px;}
+#cart-order-info tfoot td{ padding: 16px 20px 16px 30px;border-top: 1px solid #c2c2c2;}
+#cart-order-info tfoot tr+tr td{border-top: 0;}
+#cart-order-info tfoot .sum{
+    vertical-align: top;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "SkolaSansMe";
+    text-transform: uppercase;
+    text-align: right;
+    color: #3E3E3E;
+    padding-top: 31px;
+}
+#cart-order-info tfoot .sum .currency{font-size: 14px;}
 /* end cart */
 
 /* Catalogue page */
@@ -1439,6 +1472,88 @@ ul.tabs {
     outline: none;
 }
 #contacts .telephone+.telephone{padding-left: 29px;}
+/* Modal window */
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,.5);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.reveal-modal {
+    visibility: hidden;
+    top: 100px;
+    left: 50%;
+    margin-left: -300px;
+    width: 520px;
+    position: absolute;
+    z-index: 101;
+    padding: 20px 25px;
+    background-color: #FFF;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 2px solid #e5a812;
+}
+.reveal-modal.small 		{ width: 236px; margin-left: -118px;}
+.reveal-modal.medium 		{ width: 352px; margin-left: -176px;}
+.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+.reveal-modal .close-reveal-modal {
+    font-size: 22px;
+    line-height: .5;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    color: #e5a812;
+    text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+    font-weight: bold;
+    cursor: pointer;
+}
+.reveal-modal h3{
+    margin: 0 0 28px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "SkolaSansMe";
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.reveal-modal p{
+    color: #000;
+    font-size: 18px;
+}
+#modal-thnx-recall h3,
+#modal-thnx-registr h3{
+    margin: 0;
+    padding: 20px 0;
+}
+#modal-log-in h3{line-height: 28px;}
+#modal-log-in ul{text-align: center;}
+#modal-log-in .input-text-style{
+    width: 159px;
+    padding: 6px 10px 6px 18px;
+}
+#modal-log-in li+li .input-text-style{margin-top: 20px;}
+#modal-log-in a.btn-text{
+    font-weight: 300;
+    font-family: "SkolaSansLi";
+}
+#modal-log-in a.btn-text:hover{text-decoration: none;}
+#modal-log-in .btn{width: 190px;margin-top: 20px;}
+#modal-log-in .or-text{
+    padding: 17px 0 10px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "SkolaSansMe";
+    line-height: 12px;
+}
 /* number input  */
 .number input{
     width: 24px;
@@ -1641,6 +1756,7 @@ footer ul li a{
     line-height: 22px;
     text-transform: uppercase;
 }
+footer ul li a:hover{ border-bottom: 2px solid #fff;}
 footer a.site-map{
     display: inline-block;
     background-color: #e5a812;
