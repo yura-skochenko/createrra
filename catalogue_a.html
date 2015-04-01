@@ -79,7 +79,7 @@
                 <form action="">
                     <div class="filter-size pull-left">
                         <h3>По размеру</h3>
-                        <ul>
+                        <ul class="no-indents">
                             <li><input type="checkbox"><label>M</label></li>
                             <li><input type="checkbox"><label>S</label></li>
                             <li><input type="checkbox"><label>XS</label></li>
@@ -205,9 +205,6 @@
                             <div class="prices">
                                 <div class="price">1564 <span class="currency">грн</span></div>
                             </div>
-                            <div class="label-sale">
-                                <img src="img/label-sale.png">
-                            </div>
                         </div>
                         <div class="product-s-circle"><i></i></div>
                         <div class="show-card-product">
@@ -259,9 +256,6 @@
                             <img src="img/demo/product-girl3.png" alt="">
                             <div class="prices">
                                 <div class="price">1564 <span class="currency">грн</span></div>
-                            </div>
-                            <div class="label-sale">
-                                <img src="img/label-sale.png">
                             </div>
                         </div>
                         <div class="product-s-circle"><i></i></div>
@@ -315,9 +309,6 @@
                             <div class="prices">
                                 <div class="price">5 <span class="currency">грн</span></div>
                             </div>
-                            <div class="label-sale">
-                                <img src="img/label-sale.png">
-                            </div>
                         </div>
                         <div class="product-s-circle"><i></i></div>
                         <div class="show-card-product">
@@ -369,9 +360,6 @@
                             <img src="img/demo/product-girl3.png" alt="">
                             <div class="prices">
                                 <div class="price">1 <span class="currency">грн</span></div>
-                            </div>
-                            <div class="label-sale">
-                                <img src="img/label-sale.png">
                             </div>
                         </div>
                         <div class="product-s-circle"><i></i></div>
@@ -512,24 +500,5 @@
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/jquery.bxslider.min.js"></script>
         <script src="js/jquery.selectbox-0.2.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-
-                $("#buy_price").slider({
-                    range: true,
-                    min: 0, // минимальное значение цены
-                    max: 3000, // максимальное значение цены
-                    step: 1, // шаг слайдера
-                    values: [ 0, 2200],  // начальные значения - позиции ползунков на шкале
-
-                    slide: function( event, ui ) {
-                        $("input[name=price_s]").val(ui.values[0]); // выводим  значение от
-                        $("input[name=price_f]").val(ui.values[1]); // выводим  значение до
-                    }
-                });
-
-            });
-        </script>
-
     </body>
 </html>

@@ -56,4 +56,22 @@ $(document).ready(function(){
                     $('#delivery-np').addClass('active');
                     alert('hi');
                 });
+
+                /* Slider price */
+                $(document).ready(function() {
+
+                    $("#buy_price").slider({
+                        range: true,
+                        min: 0, // минимальное значение цены
+                        max: 3000, // максимальное значение цены
+                        step: 1, // шаг слайдера
+                        values: [ 0, 2200],  // начальные значения - позиции ползунков на шкале
+
+                        slide: function( event, ui ) {
+                            $("input[name=price_s]").val(ui.values[0]); // выводим  значение от
+                            $("input[name=price_f]").val(ui.values[1]); // выводим  значение до
+                        }
+                    });
+
+                });
             });

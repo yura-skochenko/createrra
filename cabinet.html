@@ -12,6 +12,7 @@
         <link href="css/style.css" rel="stylesheet" media="all">
         <link href="css/jquery.bxslider.css" rel="stylesheet" media="all">
         <link href="css/jquery.selectbox.css" media="all" rel="stylesheet" />
+        <link href="css/jquery-ui.css" media="all" rel="stylesheet" />
     </head>
     <body>
         <div class="topbar container">
@@ -76,11 +77,11 @@
             <section id="user-account">
                 <h2>Личный кабинет</h2>
                 <form>
-                    <ul>
-                        <li><input type="text" placeholder="Артур Стаканов"/></li>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
+                    <ul class="no-indents">
+                        <li><input type="text" placeholder="Артур Стаканов" class="input-text-style"></li>
+                        <li><input type="text" placeholder="" class="input-text-style"></li>
+                        <li><input type="text" class="input-text-style"></li>
+                        <li><input type="text" class="input-text-style"></li>
                         <li><input type="checkbox" id="edit-pass" hidden/> <label for="edit-pass">Изменить пароль</label></li>
                         <li>
                             <select name="region" id="region" class="select-light">
@@ -97,7 +98,7 @@
                                 <option value="">Львов</option>
                             </select>
                         </li>
-                        <li><input type="text"/></li>
+                        <li><input type="text" class="input-text-style"></li>
                         <li><input type="button" class="btn" value="Сохранить"/></li>
                     </ul>
                 </form>
@@ -255,6 +256,7 @@
 
         <!-- scripts -->
         <script src="//cdn.jsdelivr.net/jquery/1.11.2/jquery.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
         <script src="js/common.js"></script>
         <script src="js/jquery.bxslider.min.js"></script>
         <script src="js/jquery.selectbox-0.2.min.js"></script>
