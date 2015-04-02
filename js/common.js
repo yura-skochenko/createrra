@@ -186,4 +186,13 @@ $(document).ready(function(){
                         });//each call
                     }//orbit plugin call
                 })(jQuery);
+
+                $(function(){
+                    $('#slider-product').Thumbelina({
+                        orientation:'vertical',
+                        $bwdBut:$('#slider-product .top'),
+                        $fwdBut:$('#slider-product .bottom')
+                    });
+                });
+                CloudZoom.quickStart();
             });
