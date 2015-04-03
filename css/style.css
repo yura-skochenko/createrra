@@ -28,7 +28,7 @@
 }
 
 body{
-    font-family: "SkolaSansLi";
+    font-family: "SkolaSansLi", Calibri, Arial, sans-serif;
     color:  #2d3337;
     font-size: 14px;
     font-weight: 300;
@@ -70,7 +70,7 @@ header{
     color: #000;
     font-size: 18px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 18px;
     text-transform: uppercase;
     text-align: left;
@@ -100,6 +100,12 @@ ul.no-indents ul{
     -moz-box-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn:hover{
+    background-color: #FFC638;
 }
 .btn-small{
     padding: 0 5px;
@@ -111,7 +117,7 @@ ul.no-indents ul{
     color: #E5A812;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -135,12 +141,16 @@ textarea.input-text-style{
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
     background-color: #FFF;
     border: 2px solid #e5a812;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    -webkit-transition: background 0.2s ease-out 0.1s;
+    -moz-transition: background 0.2s ease-out 0.1s;
+    -o-transition: background 0.2s ease-out 0.1s;
+    transition: background 0.2s ease-out 0.1s;
 }
 input.input-text-style[type=password]{font-size: 16px;padding: 8px 10px 8px 18px;line-height: 18px;}
 input.input-text-style[type=text]:focus,
@@ -172,7 +182,7 @@ textarea.input-text-style::-webkit-input-placeholder{
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
 }
 input.input-text-style[type=text]::-moz-placeholder,
 input.input-text-style[type=password]::-moz-placeholder,
@@ -182,7 +192,7 @@ textarea.input-text-style::-moz-placeholder{
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
 }
 input.input-text-style[type=text]:-moz-placeholder,
 input.input-text-style[type=password]:-moz-placeholder,
@@ -192,7 +202,7 @@ textarea.input-text-style:-moz-placeholder{
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
 }
 input.input-text-style[type=text]:-ms-input-placeholder,
 input.input-text-style[type=password]:-ms-input-placeholder,
@@ -202,10 +212,10 @@ textarea.input-text-style:-ms-input-placeholder{
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
 }
 /* search */
-form.search{margin-top: 6px;}
+form.search{margin-top: 6px;width: 225px;}
 form.search .text-search{
     width: 135px;
     height: 24px;
@@ -217,13 +227,17 @@ form.search .text-search{
     -webkit-border-radius: 5px;
     border-radius: 5px;
     float: left;
+    -webkit-transition: background 0.2s ease-out 0.1s;
+    -moz-transition: background 0.2s ease-out 0.1s;
+    -o-transition: background 0.2s ease-out 0.1s;
+    transition: background 0.2s ease-out 0.1s;
 }
 form.search .text-search::-webkit-input-placeholder {
     color: #333;
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
     line-height: 18px;
 }
 form.search .text-search::-moz-placeholder {
@@ -231,7 +245,7 @@ form.search .text-search::-moz-placeholder {
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
     line-height: 18px;
 }
 form.search .text-search:-moz-placeholder {
@@ -239,7 +253,7 @@ form.search .text-search:-moz-placeholder {
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
     line-height: 18px;
 }
 form.search .text-search:-ms-input-placeholder {
@@ -247,7 +261,7 @@ form.search .text-search:-ms-input-placeholder {
     font-size: 12px;
     font-weight: 300;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
     line-height: 18px;
 }
 form.search .text-search:focus{
@@ -346,6 +360,9 @@ header .cart{
     margin: 0 0 24px 25px;
     width: 112px;
     height: 36px;
+}
+header .cart a{
+    display: block;
     background-color: #E5A812;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -353,29 +370,67 @@ header .cart{
     -moz-box-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1.7px 1px rgba(0, 0, 0, 0.3);
-}
-header .cart a{
-    display: block;
-    padding-left: 42px;
     color: #FFFDFB;
     font-size: 12px;
     font-weight: 300;
-    line-height: 38px;
+    line-height: 37px;
     text-transform: uppercase;
-    background: url(../img/img-sprite.png) no-repeat 10px 8px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+header .cart a:hover{
+    background-color: #FFC638;
+}
+header .cart a i{
+    display: block;
+    width: 23px;
+    height: 21px;
+    margin: 9px 10px 0 9px;
+    float: left;
+    background: url(../img/img-sprite.png) no-repeat 0px 0px;
 }
 header .log-in {
     margin-top: 6px;
     color: #333;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
 }
 header .log-in a{
     color: #333;
     text-decoration: underline;
 }
 header .log-in a:hover{text-decoration: none;}
+header .authorized-user{text-align: center;  margin-right: 53px;}
+header .authorized-user li{line-height: 12px;  margin-bottom: 8px;}
+header .authorized-user li a{
+    color: #e5a812;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
+    line-height: 12px;
+    text-decoration: underline;
+}
+header .authorized-user li+li a{
+    color: #333333;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
+    line-height: 12px;
+    position: relative;
+    text-decoration: none;
+}
+header .authorized-user li+li a:after{
+    content: '...........';
+    display: block;
+    width: 48px;
+    position: absolute;
+    top: 5px;
+    left: -4px;
+}
+header .authorized-user li a:hover{text-decoration: none;}
+header .authorized-user li a:hover:after{display: none;}
 header nav{
     width: 687px;
     height: 43px;
@@ -401,7 +456,7 @@ header nav ul>li>a{
     color: #000;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     text-transform: uppercase;
 }
 header nav>ul>li>a:hover{border-bottom: 2px solid #e5a812;}
@@ -479,8 +534,12 @@ header nav ul li .sub-menu ul li a:hover{border-bottom: 2px solid #e5a812;}
     background-color: rgba(255, 255, 255, 0.5);
     width: 235px;
     height: 235px;
+    -webkit-transition: all 0.3s 0.2s;
+    -moz-transition: all 0.3s 0.2s;
+    transition: all 0.2s 0.1s;
 }
 .promo-zone ul li+li{margin-left: 57px;}
+.promo-zone ul li:hover {background: #fff;}
 .promo-zone ul li a{
     display: block;
     border-radius: 50%;
@@ -494,7 +553,7 @@ header nav ul li .sub-menu ul li a:hover{border-bottom: 2px solid #e5a812;}
     color:  #000000;
     font-size: 18px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 30px;
     text-transform: uppercase;
 }
@@ -521,6 +580,9 @@ ul.tabs {
     background: #2d3337;
     border-bottom: 1px solid #e5a812;
     position: relative;
+    -webkit-transition: all 0.1s 0.1s;
+    -moz-transition: all 0.1s 0.1s;
+    transition: all 0.1s 0.1s;
 }
 .tabs .tabs-title {
     display: table;
@@ -534,7 +596,7 @@ ul.tabs {
     color: #ffffff;
     font-size: 24px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 36px;
     text-transform: uppercase;
 }
@@ -649,6 +711,9 @@ ul.tabs {
     width: 46px;
     height: 46px;
     cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1.4s, visibility 0s linear 0.5s;
 }
 .box .box-product div.box-product-s-circle i{
     display: block;
@@ -658,7 +723,6 @@ ul.tabs {
     background: url(../img/img-sprite.png) no-repeat 0px -23px;
 }
 .box .box-product div.box-product-b-circle{
-    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -668,6 +732,9 @@ ul.tabs {
     background-color: rgba(255, 255, 255, 0.72);
     width: 160px;
     height: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s linear 0.5s;
 }
 .box .box-product div.box-product-b-circle ul{
     margin: 22px 0 0;
@@ -710,8 +777,16 @@ ul.tabs {
     margin: 10px auto;
     background: url(../img/img-sprite.png) no-repeat 0px -48px;
 }
-.box .box-product:hover div.box-product-s-circle{display: none;}
-.box .box-product:hover div.box-product-s-circle+div.box-product-b-circle{display: block;}
+.box .box-product:hover div.box-product-s-circle{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+.box .box-product:hover div.box-product-s-circle+div.box-product-b-circle{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
 .slider{padding-top: 48px;}
 /* end main page */
 
@@ -722,14 +797,14 @@ ul.tabs {
     color: #000;
     font-size: 48px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 72px;
 }
 #error-404 span{
     color: #000;
     font-size: 24px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     margin: 25px 0;
     display: block;
 }
@@ -744,7 +819,7 @@ ul.tabs {
     color: #2D3437;
     font-size: 30px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     text-decoration: underline;
 }
 #error-404 ul li a:hover{text-decoration: none;}
@@ -764,7 +839,7 @@ ul.tabs {
     color:  #000000;
     font-size: 18px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 18px;
     text-transform: uppercase;
 }
@@ -788,7 +863,7 @@ ul.tabs {
     color: #000000;
     font-size: 18px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 18px;
     text-transform: uppercase;
 }
@@ -807,7 +882,7 @@ ul.tabs {
     color: #000000;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 12px;
     text-transform: uppercase;
 }
@@ -818,7 +893,7 @@ ul.tabs {
     text-align: left;
     font-size: 14px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 14px;
     text-transform: inherit;
     border-top: 1px solid #c2c2c2;
@@ -852,9 +927,9 @@ ul.tabs {
     color: #2D3337;
     font-size: 14px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
     line-height: 14px;
 }
 #user-orders .orders-list tfoot td+td{
@@ -869,7 +944,7 @@ ul.tabs {
     color: #000000;
     font-size: 18px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 18px;
     text-transform: uppercase;
 }
@@ -889,7 +964,7 @@ ul.tabs {
     text-align: center;
     font-size: 14px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 14px;
     border-bottom: 1px solid #c2c2c2;
 }
@@ -921,7 +996,7 @@ ul.tabs {
 #cart .cart-orders tfoot td.price{
     color: #3E3E3E;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     text-align: right;
@@ -959,7 +1034,7 @@ ul.tabs {
 #cart-order-info td textarea::-webkit-input-placeholder{
     color: #000;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
     font-weight: 300;
 }
 #cart-order-info tbody td input[type=text]::-moz-placeholder,
@@ -967,7 +1042,7 @@ ul.tabs {
 #cart-order-info td textarea::-moz-placeholder{
     color: #000;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
     font-weight: 300;
 }
 #cart-order-info tbody td input[type=text]:-moz-placeholder,
@@ -975,7 +1050,7 @@ ul.tabs {
 #cart-order-info td textarea:-moz-placeholder{
     color: #000;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
     font-weight: 300;
 }
 #cart-order-info tbody td input[type=text]:-ms-input-placeholder,
@@ -984,7 +1059,7 @@ ul.tabs {
     width: 188px;
     color: #000;
     font-style: italic;
-    font-family: "SkolaSansLiIt";
+    font-family: "SkolaSansLiIt", Calibri, Arial, sans-serif;
     font-weight: 300;
 }
 #cart-order-info td textarea{
@@ -1005,7 +1080,7 @@ ul.tabs {
     vertical-align: top;
     font-size: 18px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     text-transform: uppercase;
     text-align: right;
     color: #3E3E3E;
@@ -1028,7 +1103,7 @@ ul.tabs {
     color: #000;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
@@ -1036,7 +1111,7 @@ ul.tabs {
     color: #333;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     text-align: left;
 }
 #product-filter form>div ul{
@@ -1161,7 +1236,7 @@ ul.tabs {
     color: #333;
     font-size: 14px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
 }
 .column-left .category ul a:hover{
     border-bottom: 2px solid #E5A812;
@@ -1194,7 +1269,7 @@ ul.tabs {
     padding: 4px 11px;
     color: #FFF;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     font-size: 21px;
     text-align: center;
     line-height: 31px;
@@ -1310,7 +1385,7 @@ ul.tabs {
     width: 100%;
 }
 .product-grid>div .show-card-product strong,
-#featured-product>div .show-card-product strong{font-weight: 500; font-family: "SkolaSansMe";}
+#featured-product>div .show-card-product strong{font-weight: 500; font-family: "SkolaSansMe", Calibri, Arial, sans-serif;}
 .product-grid>div .show-card-product .description,
 #featured-product>div .show-card-product .description{margin-top: 10px;}
 .product-grid>div .show-card-product .description p,
@@ -1424,7 +1499,7 @@ ul.tabs {
 #product-card .product-info p{margin: 0;}
 #product-card .product-info strong {
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     font-size: 12px;
     float: left;
     line-height: 24px;
@@ -1481,7 +1556,7 @@ ul.tabs {
     font-weight: 500;
     line-height: 18px;
     text-align: left;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     margin-top: 5px;
 }
 #product-card .product-info .social-like{text-align: center;margin-top: 57px;}
@@ -1537,7 +1612,7 @@ ul.tabs {
     color:  #ffffff;
     font-size: 21px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 34px;
     text-align: left;
     padding-left: 15px;
@@ -1557,7 +1632,7 @@ ul.tabs {
     color: #4c4d46;
     text-decoration: underline;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 14px;
 }
 #search-null .link-home:hover{text-decoration: none;}
@@ -1577,7 +1652,7 @@ ul.tabs {
     color: #000000;
     font-size: 14px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 14px;
     text-transform: uppercase;
     vertical-align: top;
@@ -1598,7 +1673,7 @@ ul.tabs {
     color:  #333333;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 18px;
     text-decoration: underline;
     text-transform: uppercase;
@@ -1626,7 +1701,7 @@ ul.tabs {
     color:  #2d3337;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 22px;
     text-transform: uppercase;
 }
@@ -1702,7 +1777,7 @@ ul.tabs {
     color: #000;
     font-size: 18px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
@@ -1725,7 +1800,6 @@ ul.tabs {
 #modal-log-in li+li .input-text-style{margin-top: 20px;}
 #modal-log-in a.btn-text{
     font-weight: 300;
-    font-family: "SkolaSansLi";
 }
 #modal-log-in a.btn-text:hover{text-decoration: none;}
 #modal-log-in .btn{width: 190px;margin-top: 20px;}
@@ -1734,7 +1808,7 @@ ul.tabs {
     color: #000;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 12px;
 }
 /* number input  */
@@ -1799,7 +1873,7 @@ ul.tabs {
     color:  #000000;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 18px;
 }
 .pagination{text-align: center;  margin-top: 30px;clear: both;}
@@ -1836,7 +1910,7 @@ ul.tabs {
     color:  #939393;
     font-size: 15px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
 }
 .pagination ul li.active-pg a,
 .pagination ul li a:hover{
@@ -1895,7 +1969,7 @@ ul.tabs {
     color:  #2d3337;
     font-size: 18px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 20px;
 }
 .seo-text h2 span{
@@ -1920,7 +1994,7 @@ footer .column h2{
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 20px;
     text-transform: uppercase;
     margin: 0 0 26px;
@@ -1935,7 +2009,7 @@ footer ul li a{
     color:  #ffffff;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 22px;
     text-transform: uppercase;
 }
@@ -1948,10 +2022,14 @@ footer a.site-map{
     color: #ffffff;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 13px;
     text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
+footer a.site-map:hover{background-color: #FFC638;}
 footer ul li.telephone{padding-left: 35px;}
 footer ul li.timetable{text-transform: initial;}
 footer .social-net ul li{
@@ -1972,7 +2050,7 @@ footer .social-net ul li+li+li+li a{background-position: -93px -73px;}
     color: #ffffff;
     font-size: 12px;
     font-weight: 500;
-    font-family: "SkolaSansMe";
+    font-family: "SkolaSansMe", Calibri, Arial, sans-serif;
     line-height: 13px;
 }
 #copyright a{
