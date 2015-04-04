@@ -38,6 +38,14 @@ $(document).ready(function(){
                     pager: false,
                     slideMargin: 0
                 });
+                $('.carousel-featured').bxSlider({
+                    slideWidth: 210,
+                    minSlides: 2,
+                    maxSlides: 4,
+                    moveSlides: 1,
+                    pager: false,
+                    slideMargin: 0
+                });
                 /* product show card */
                 $('.product-s-circle').on('click', function(){
                     $(this).parent('div').toggleClass('active');

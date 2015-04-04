@@ -199,3 +199,7 @@
 	font-size: .85em;
 	padding: 10px;
 }
+
+#featured-product .bx-wrapper{
+    max-width: 900px!important;
+}
