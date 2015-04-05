@@ -8,7 +8,7 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <!-- style -->
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/normalize/3.0.2/normalize.css">
+        <link rel="stylesheet" href="http://cdn.jsdelivr.net/normalize/3.0.2/normalize.css">
         <link href="css/style.css" rel="stylesheet" media="all">
         <link href="css/jquery.bxslider.css" rel="stylesheet" media="all">
         <link href="css/jquery.selectbox.css" media="all" rel="stylesheet" />
@@ -21,7 +21,7 @@
                 <li>
                     <div class="toggle-bg">
                         <input type="radio" name="toggle" value="ua" id="lang-ua">
-                        <input type="radio" name="toggle" value="ru" id="lang-ru">
+                        <input type="radio" name="toggle" value="ru" id="lang-ru" checked>
                         <span class="switch"></span>
                     </div>
                 </li>
@@ -37,11 +37,17 @@
                     <input name="search" type="search" placeholder="Поиск" class="text-search">
                     <input type="submit" value="Найти" class="btn btn-small">
                 </form>
-                <div class="cart pull-right"><a href="">Корзина</a></div>
+                <div class="cart pull-right"><a href=""><i></i>Корзина</a></div>
                 <div class="log-in pull-right">
                     <a href="" data-reveal-id="modal-log-in" data-animation="fade">Войдите</a> или
                     <a href="">зарегистрируйтесь</a>
                 </div>
+                <!--<div class="authorized-user pull-right">
+                    <ul class="no-indents">
+                        <li><a href="">Артур Стаканов</a></li>
+                        <li><a href="">Выйти</a></li>
+                    </ul>
+                </div>-->
                 <nav class="clear">
                     <ul>
                         <li><a href="">Главная</a></li>
@@ -74,10 +80,21 @@
             </div>
         </header>
         <div id="content" class="container">
+
+            <div class="breadcrumbs clear">
+                <ul class="no-indents">
+                    <li><a href="/">Главная</a> /</li>
+                    <li><a href="">Каталог</a> /</li>
+                    <li><strong>Короткое весеннее платье ADO.NET</strong></li>
+                </ul>
+            </div>
+
+            <h2 class="title-left">Короткое весеннее платье ADO.NET</h2>
+
             <section id="product-card" class="overflow-h">
 
                     <div id="slider-product">
-                        <div class="thumbelina-but vert top"></div>
+                        <div class="thumbelina-but vert top"><div></div></div>
                         <div>
                             <ul class="thumbelina">
                                 <li>
@@ -138,7 +155,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="fwd3" class="thumbelina-but vert bottom"></div>
+                        <div id="fwd3" class="thumbelina-but vert bottom"><div></div></div>
                     </div>
 
                     <div class="slider-main-image pull-left">
@@ -541,6 +558,532 @@
                             </ul>
                         </div>
                     </div>
+                    <div>
+                        <div class="show-img-product">
+                            <img src="img/demo/product-girl1.png" alt="">
+                            <div class="prices">
+                                <div class="price">1564 <span class="currency">грн</span></div>
+                                <div class="price-sale">800 <span class="currency">грн</span></div>
+                            </div>
+                            <div class="label-sale">
+                                <img src="img/label-sale.png">
+                            </div>
+                        </div>
+                        <div class="product-s-circle"><i></i></div>
+                        <div class="show-card-product">
+                            <div class="close-product">X</div>
+                            <ul>
+                                <li><strong>Модель: </strong>ado.net</li>
+                                <li><strong>Наличие: </strong>В НАЛИЧИИ</li>
+                                <li class="description">
+                                    <strong>Описание: </strong>
+                                    <p>
+                                        Мы тщательно работаем над тем, чтобы наши клиентки смогли полностью удовлетворить свои вкусовые и стилистические предпочтения.
+                                    </p>
+                                </li>
+                                <li class="size">
+                                    <strong>Размер:</strong>
+                                    <ul class="pull-left">
+                                        <li><input type="checkbox"><label>M</label></li>
+                                        <li><input type="checkbox"><label>S</label></li>
+                                        <li><input type="checkbox"><label>XS</label></li>
+                                        <li><input type="checkbox" class="disabled"><label>XXS</label></li>
+                                    </ul>
+                                </li>
+                                <li class="color">
+                                    <strong>Цвет: </strong>
+                                    <select name="" id="product-color" class="select-light">
+                                        <option selected>Выберите цвет</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Серый</option>
+                                        <option value="">Черный</option>
+                                    </select>
+                                </li>
+                                <li class="amount">
+                                    <strong>Кол-во: </strong>
+                                    <div class="number pull-left">
+                                        <input type="text" value="1">
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input class="btn btn-big" type="button" value="В корзину"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="show-img-product">
+                            <img src="img/demo/product-girl2.png" alt="">
+                            <div class="prices">
+                                <div class="price">1564 <span class="currency">грн</span></div>
+                            </div>
+                        </div>
+                        <div class="product-s-circle"><i></i></div>
+                        <div class="show-card-product">
+                            <div class="close-product">X</div>
+                            <ul>
+                                <li><strong>Модель: </strong>ado.net</li>
+                                <li><strong>Наличие: </strong>В НАЛИЧИИ</li>
+                                <li class="description">
+                                    <strong>Описание: </strong>
+                                    <p>
+                                        Мы тщательно работаем над тем, чтобы наши клиентки смогли полностью удовлетворить свои вкусовые и стилистические предпочтения.
+                                    </p>
+                                </li>
+                                <li class="size">
+                                    <strong>Размер:</strong>
+                                    <ul class="pull-left">
+                                        <li><input type="checkbox"><label>M</label></li>
+                                        <li><input type="checkbox"><label>S</label></li>
+                                        <li><input type="checkbox"><label>XS</label></li>
+                                        <li><input type="checkbox" class="disabled"><label>XXS</label></li>
+                                    </ul>
+                                </li>
+                                <li class="color">
+                                    <strong>Цвет: </strong>
+                                    <select name="" id="product-color" class="select-light">
+                                        <option selected>Выберите цвет</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Серый</option>
+                                        <option value="">Черный</option>
+                                    </select>
+                                </li>
+                                <li class="amount">
+                                    <strong>Кол-во: </strong>
+                                    <div class="number pull-left">
+                                        <input type="text" value="1">
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input class="btn btn-big" type="button" value="В корзину"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="show-img-product">
+                            <img src="img/demo/product-girl3.png" alt="">
+                            <div class="prices">
+                                <div class="price">1564 <span class="currency">грн</span></div>
+                            </div>
+                        </div>
+                        <div class="product-s-circle"><i></i></div>
+                        <div class="show-card-product">
+                            <div class="close-product">X</div>
+                            <ul>
+                                <li><strong>Модель: </strong>ado.net</li>
+                                <li><strong>Наличие: </strong>В НАЛИЧИИ</li>
+                                <li class="description">
+                                    <strong>Описание: </strong>
+                                    <p>
+                                        Мы тщательно работаем над тем, чтобы наши клиентки смогли полностью удовлетворить свои вкусовые и стилистические предпочтения.
+                                    </p>
+                                </li>
+                                <li class="size">
+                                    <strong>Размер:</strong>
+                                    <ul class="pull-left">
+                                        <li><input type="checkbox"><label>M</label></li>
+                                        <li><input type="checkbox"><label>S</label></li>
+                                        <li><input type="checkbox"><label>XS</label></li>
+                                        <li><input type="checkbox" class="disabled"><label>XXS</label></li>
+                                    </ul>
+                                </li>
+                                <li class="color">
+                                    <strong>Цвет: </strong>
+                                    <select name="" id="product-color" class="select-light">
+                                        <option selected>Выберите цвет</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Серый</option>
+                                        <option value="">Черный</option>
+                                    </select>
+                                </li>
+                                <li class="amount">
+                                    <strong>Кол-во: </strong>
+                                    <div class="number pull-left">
+                                        <input type="text" value="1">
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input class="btn btn-big" type="button" value="В корзину"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="show-img-product">
+                            <img src="img/demo/product-girl1.png" alt="">
+                            <div class="prices">
+                                <div class="price">5 <span class="currency">грн</span></div>
+                            </div>
+                        </div>
+                        <div class="product-s-circle"><i></i></div>
+                        <div class="show-card-product">
+                            <div class="close-product">X</div>
+                            <ul>
+                                <li><strong>Модель: </strong>ado.net</li>
+                                <li><strong>Наличие: </strong>В НАЛИЧИИ</li>
+                                <li class="description">
+                                    <strong>Описание: </strong>
+                                    <p>
+                                        Мы тщательно работаем над тем, чтобы наши клиентки смогли полностью удовлетворить свои вкусовые и стилистические предпочтения.
+                                    </p>
+                                </li>
+                                <li class="size">
+                                    <strong>Размер:</strong>
+                                    <ul class="pull-left">
+                                        <li><input type="checkbox"><label>M</label></li>
+                                        <li><input type="checkbox"><label>S</label></li>
+                                        <li><input type="checkbox"><label>XS</label></li>
+                                        <li><input type="checkbox" class="disabled"><label>XXS</label></li>
+                                    </ul>
+                                </li>
+                                <li class="color">
+                                    <strong>Цвет: </strong>
+                                    <select name="" id="product-color" class="select-light">
+                                        <option selected>Выберите цвет</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Серый</option>
+                                        <option value="">Черный</option>
+                                    </select>
+                                </li>
+                                <li class="amount">
+                                    <strong>Кол-во: </strong>
+                                    <div class="number pull-left">
+                                        <input type="text" value="1">
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input class="btn btn-big" type="button" value="В корзину"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="show-img-product">
+                            <img src="img/demo/product-girl3.png" alt="">
+                            <div class="prices">
+                                <div class="price">1 <span class="currency">грн</span></div>
+                            </div>
+                        </div>
+                        <div class="product-s-circle"><i></i></div>
+                        <div class="show-card-product">
+                            <div class="close-product">X</div>
+                            <ul>
+                                <li><strong>Модель: </strong>ado.net</li>
+                                <li><strong>Наличие: </strong>В НАЛИЧИИ</li>
+                                <li class="description">
+                                    <strong>Описание: </strong>
+                                    <p>
+                                        Мы тщательно работаем над тем, чтобы наши клиентки смогли полностью удовлетворить свои вкусовые и стилистические предпочтения.
+                                    </p>
+                                </li>
+                                <li class="size">
+                                    <strong>Размер:</strong>
+                                    <ul class="pull-left">
+                                        <li><input type="checkbox"><label>M</label></li>
+                                        <li><input type="checkbox"><label>S</label></li>
+                                        <li><input type="checkbox"><label>XS</label></li>
+                                        <li><input type="checkbox" class="disabled"><label>XXS</label></li>
+                                    </ul>
+                                </li>
+                                <li class="color">
+                                    <strong>Цвет: </strong>
+                                    <select name="" id="product-color" class="select-light">
+                                        <option selected>Выберите цвет</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Серый</option>
+                                        <option value="">Черный</option>
+                                    </select>
+                                </li>
+                                <li class="amount">
+                                    <strong>Кол-во: </strong>
+                                    <div class="number pull-left">
+                                        <input type="text" value="1">
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input class="btn btn-big" type="button" value="В корзину"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="show-img-product">
+                            <img src="img/demo/product-girl1.png" alt="">
+                            <div class="prices">
+                                <div class="price">1564 <span class="currency">грн</span></div>
+                                <div class="price-sale">800 <span class="currency">грн</span></div>
+                            </div>
+                            <div class="label-sale">
+                                <img src="img/label-sale.png">
+                            </div>
+                        </div>
+                        <div class="product-s-circle"><i></i></div>
+                        <div class="show-card-product">
+                            <div class="close-product">X</div>
+                            <ul>
+                                <li><strong>Модель: </strong>ado.net</li>
+                                <li><strong>Наличие: </strong>В НАЛИЧИИ</li>
+                                <li class="description">
+                                    <strong>Описание: </strong>
+                                    <p>
+                                        Мы тщательно работаем над тем, чтобы наши клиентки смогли полностью удовлетворить свои вкусовые и стилистические предпочтения.
+                                    </p>
+                                </li>
+                                <li class="size">
+                                    <strong>Размер:</strong>
+                                    <ul class="pull-left">
+                                        <li><input type="checkbox"><label>M</label></li>
+                                        <li><input type="checkbox"><label>S</label></li>
+                                        <li><input type="checkbox"><label>XS</label></li>
+                                        <li><input type="checkbox" class="disabled"><label>XXS</label></li>
+                                    </ul>
+                                </li>
+                                <li class="color">
+                                    <strong>Цвет: </strong>
+                                    <select name="" id="product-color" class="select-light">
+                                        <option selected>Выберите цвет</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Серый</option>
+                                        <option value="">Черный</option>
+                                    </select>
+                                </li>
+                                <li class="amount">
+                                    <strong>Кол-во: </strong>
+                                    <div class="number pull-left">
+                                        <input type="text" value="1">
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input class="btn btn-big" type="button" value="В корзину"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="show-img-product">
+                            <img src="img/demo/product-girl2.png" alt="">
+                            <div class="prices">
+                                <div class="price">1564 <span class="currency">грн</span></div>
+                            </div>
+                        </div>
+                        <div class="product-s-circle"><i></i></div>
+                        <div class="show-card-product">
+                            <div class="close-product">X</div>
+                            <ul>
+                                <li><strong>Модель: </strong>ado.net</li>
+                                <li><strong>Наличие: </strong>В НАЛИЧИИ</li>
+                                <li class="description">
+                                    <strong>Описание: </strong>
+                                    <p>
+                                        Мы тщательно работаем над тем, чтобы наши клиентки смогли полностью удовлетворить свои вкусовые и стилистические предпочтения.
+                                    </p>
+                                </li>
+                                <li class="size">
+                                    <strong>Размер:</strong>
+                                    <ul class="pull-left">
+                                        <li><input type="checkbox"><label>M</label></li>
+                                        <li><input type="checkbox"><label>S</label></li>
+                                        <li><input type="checkbox"><label>XS</label></li>
+                                        <li><input type="checkbox" class="disabled"><label>XXS</label></li>
+                                    </ul>
+                                </li>
+                                <li class="color">
+                                    <strong>Цвет: </strong>
+                                    <select name="" id="product-color" class="select-light">
+                                        <option selected>Выберите цвет</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Серый</option>
+                                        <option value="">Черный</option>
+                                    </select>
+                                </li>
+                                <li class="amount">
+                                    <strong>Кол-во: </strong>
+                                    <div class="number pull-left">
+                                        <input type="text" value="1">
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input class="btn btn-big" type="button" value="В корзину"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="show-img-product">
+                            <img src="img/demo/product-girl3.png" alt="">
+                            <div class="prices">
+                                <div class="price">1564 <span class="currency">грн</span></div>
+                            </div>
+                        </div>
+                        <div class="product-s-circle"><i></i></div>
+                        <div class="show-card-product">
+                            <div class="close-product">X</div>
+                            <ul>
+                                <li><strong>Модель: </strong>ado.net</li>
+                                <li><strong>Наличие: </strong>В НАЛИЧИИ</li>
+                                <li class="description">
+                                    <strong>Описание: </strong>
+                                    <p>
+                                        Мы тщательно работаем над тем, чтобы наши клиентки смогли полностью удовлетворить свои вкусовые и стилистические предпочтения.
+                                    </p>
+                                </li>
+                                <li class="size">
+                                    <strong>Размер:</strong>
+                                    <ul class="pull-left">
+                                        <li><input type="checkbox"><label>M</label></li>
+                                        <li><input type="checkbox"><label>S</label></li>
+                                        <li><input type="checkbox"><label>XS</label></li>
+                                        <li><input type="checkbox" class="disabled"><label>XXS</label></li>
+                                    </ul>
+                                </li>
+                                <li class="color">
+                                    <strong>Цвет: </strong>
+                                    <select name="" id="product-color" class="select-light">
+                                        <option selected>Выберите цвет</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Серый</option>
+                                        <option value="">Черный</option>
+                                    </select>
+                                </li>
+                                <li class="amount">
+                                    <strong>Кол-во: </strong>
+                                    <div class="number pull-left">
+                                        <input type="text" value="1">
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input class="btn btn-big" type="button" value="В корзину"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="show-img-product">
+                            <img src="img/demo/product-girl1.png" alt="">
+                            <div class="prices">
+                                <div class="price">5 <span class="currency">грн</span></div>
+                            </div>
+                        </div>
+                        <div class="product-s-circle"><i></i></div>
+                        <div class="show-card-product">
+                            <div class="close-product">X</div>
+                            <ul>
+                                <li><strong>Модель: </strong>ado.net</li>
+                                <li><strong>Наличие: </strong>В НАЛИЧИИ</li>
+                                <li class="description">
+                                    <strong>Описание: </strong>
+                                    <p>
+                                        Мы тщательно работаем над тем, чтобы наши клиентки смогли полностью удовлетворить свои вкусовые и стилистические предпочтения.
+                                    </p>
+                                </li>
+                                <li class="size">
+                                    <strong>Размер:</strong>
+                                    <ul class="pull-left">
+                                        <li><input type="checkbox"><label>M</label></li>
+                                        <li><input type="checkbox"><label>S</label></li>
+                                        <li><input type="checkbox"><label>XS</label></li>
+                                        <li><input type="checkbox" class="disabled"><label>XXS</label></li>
+                                    </ul>
+                                </li>
+                                <li class="color">
+                                    <strong>Цвет: </strong>
+                                    <select name="" id="product-color" class="select-light">
+                                        <option selected>Выберите цвет</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Серый</option>
+                                        <option value="">Черный</option>
+                                    </select>
+                                </li>
+                                <li class="amount">
+                                    <strong>Кол-во: </strong>
+                                    <div class="number pull-left">
+                                        <input type="text" value="1">
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input class="btn btn-big" type="button" value="В корзину"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="show-img-product">
+                            <img src="img/demo/product-girl3.png" alt="">
+                            <div class="prices">
+                                <div class="price">1 <span class="currency">грн</span></div>
+                            </div>
+                        </div>
+                        <div class="product-s-circle"><i></i></div>
+                        <div class="show-card-product">
+                            <div class="close-product">X</div>
+                            <ul>
+                                <li><strong>Модель: </strong>ado.net</li>
+                                <li><strong>Наличие: </strong>В НАЛИЧИИ</li>
+                                <li class="description">
+                                    <strong>Описание: </strong>
+                                    <p>
+                                        Мы тщательно работаем над тем, чтобы наши клиентки смогли полностью удовлетворить свои вкусовые и стилистические предпочтения.
+                                    </p>
+                                </li>
+                                <li class="size">
+                                    <strong>Размер:</strong>
+                                    <ul class="pull-left">
+                                        <li><input type="checkbox"><label>M</label></li>
+                                        <li><input type="checkbox"><label>S</label></li>
+                                        <li><input type="checkbox"><label>XS</label></li>
+                                        <li><input type="checkbox" class="disabled"><label>XXS</label></li>
+                                    </ul>
+                                </li>
+                                <li class="color">
+                                    <strong>Цвет: </strong>
+                                    <select name="" id="product-color" class="select-light">
+                                        <option selected>Выберите цвет</option>
+                                        <option value="">Белый</option>
+                                        <option value="">Серый</option>
+                                        <option value="">Черный</option>
+                                    </select>
+                                </li>
+                                <li class="amount">
+                                    <strong>Кол-во: </strong>
+                                    <div class="number pull-left">
+                                        <input type="text" value="1">
+                                        <div>
+                                            <span class="minus"></span>
+                                            <span class="plus"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input class="btn btn-big" type="button" value="В корзину"></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="seo-text clear">
@@ -649,7 +1192,7 @@
         </div>
 
         <!-- scripts -->
-        <script src="//cdn.jsdelivr.net/jquery/1.11.2/jquery.js"></script>
+        <script src="http://cdn.jsdelivr.net/jquery/1.11.2/jquery.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/common.js"></script>
         <script src="js/cloudzoom.js"></script>

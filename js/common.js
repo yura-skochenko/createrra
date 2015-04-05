@@ -44,8 +44,17 @@ $(document).ready(function(){
                     maxSlides: 4,
                     moveSlides: 1,
                     pager: false,
+                    hideControlOnEnd: false,
+                    infiniteLoop: false,
+                    onSlideNext: function($slideElement, oldIndex, newIndex){
+                        $('.carousel-featured>div.left-active').removeClass().next().eq(0).addClass('left-active');
+                    },
+                    onSlidePrev: function($slideElement, oldIndex, newIndex){
+                        $('.carousel-featured>div.left-active').removeClass().prev().eq(0).addClass('left-active');
+                    },
                     slideMargin: 0
                 });
+                $('.carousel-featured>div:not(:lt(3))').eq(0).addClass('left-active');
                 /* product show card */
                 $('.product-s-circle').on('click', function(){
                     $(this).parent('div').toggleClass('active');
@@ -57,12 +66,6 @@ $(document).ready(function(){
                 });
                 $('.close-product').on('click', function(){
                     $(this).parents('div').removeClass('active');
-                });
-
-                $('#del-np:radio:checked').on('click', function(){
-                    $('#delivery-np').removeClass('active');
-                    $('#delivery-np').addClass('active');
-                    alert('hi');
                 });
 
                 /* Slider price */

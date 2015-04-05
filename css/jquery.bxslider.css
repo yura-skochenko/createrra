@@ -107,12 +107,12 @@
 	left: -40px;
 	background: url(../img/carousel-controls.png) no-repeat 0 0;
 }
-
+#featured-product .bx-wrapper .bx-prev {background: url(../img/img-sprite.png) no-repeat -38px -200px;}
 .bx-wrapper .bx-next {
 	right: -40px;
 	background: url(../img/carousel-controls.png) no-repeat -27px 0;
 }
-
+#featured-product .bx-wrapper .bx-next {background: url(../img/img-sprite.png) no-repeat -61px -200px;}
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-next:hover {
 	opacity: 0.5;
@@ -128,7 +128,12 @@
 	text-indent: -9999px;
 	z-index: 9999;
 }
-
+#featured-product .bx-wrapper .bx-controls-direction a{
+    top: 55%;
+    margin-top: -16px;
+    width: 22px;
+    height: 32px;
+}
 .bx-wrapper .bx-controls-direction a.disabled {
 	display: none;
 }
